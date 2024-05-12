@@ -8,7 +8,7 @@ programa {
     escreva("Passo 1 - Cadastro de Resposta!", "\n")
     escreva("===============================", "\n")
     para(inteiro c = 0; c < 5 ; c++){
-      escreva("Questão ", c + 1, ":")
+      escreva("QuestÃ£o ", c + 1, ":")
       leia(gabarito[c])
     }
     
@@ -21,13 +21,13 @@ programa {
     inteiro soma = 0
     inteiro media 
     
-    // Correção das respostas(Dá para melhorar isso aqui ainda!)
+    // CorreÃ§Ã£o das respostas(DÃ¡ para melhorar isso aqui ainda!)
     para(inteiro i = 0; i < 3; i++){
       escreva("Aluno ", i + 1, "\n")
       escreva("Nome: ")
       leia(nome_aluno[i])
       para(inteiro r = 0; r < 5; r++){
-        escreva("Questão ", r + 1, ":")
+        escreva("QuestÃ£o ", r + 1, ":")
         leia(gabarito_aluno[r])
         se(gabarito[r] == gabarito_aluno[r]){
           nota = nota + 2
@@ -48,7 +48,7 @@ programa {
     para(inteiro j = 0; j < 3; j++){
       escreva(nome_aluno[j], "      ", nota_aluno[j], "\n")
     }
-    escreva("Média da turma: ", media)
+    escreva("MÃ©dia da turma: ", media)
     }
   }
 }
